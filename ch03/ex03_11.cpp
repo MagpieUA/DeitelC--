@@ -31,6 +31,7 @@ int main()
 		<< endl;
 	
 	// display message for each Gradebook
-	cout << gradeBook1.displayMessage() << endl << gradeBook2.displayMessage();
-	
+	gradeBook1.displayMessage();
+	cout << endl;
+	gradeBook2.displayMessage();
 } // end main

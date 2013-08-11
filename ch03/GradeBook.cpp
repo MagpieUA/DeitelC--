@@ -45,7 +45,7 @@ void GradeBook::setInstructorName( string name )
 // function to get instructor's name
 string GradeBook::getInstructorName()
 {
-	return InstructorName; // return object's instructorName
+	return instructorName; // return object's instructorName
 }
 
 // display a welcome message to the GradeBook user
