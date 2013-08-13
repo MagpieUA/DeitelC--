@@ -37,7 +37,7 @@ class HeartRates
 		int getYearOfBirth();
 		int getAge();
 		int getMaximumHeartRate();
-//		string getTargetHeartRate();
+		string getTargetHeartRate();
 	private:
 		string firstName;
 		string lastName;

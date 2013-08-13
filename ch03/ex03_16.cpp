@@ -1,4 +1,4 @@
-// ex03_16.cpp
+﻿// ex03_16.cpp
 // Exercises from Chapter 3 "How to program C++ 8th edition"
 
 // Self-review exercises from Chapter 3 "How to program C++ 8th edition"
@@ -35,5 +35,5 @@ int main()
 		"/" << person1.getYearOfBirth() << endl;
 	cout << "Your age is " << person1.getAge() << " years!" << endl;
 	cout << "Your maximum heart rate is " << person1.getMaximumHeartRate() << endl;
-//	cout << "Your taget heart rate is " << person1.getTargetHeartRate() << endl;
+	cout << "Your target heart rate is " << person1.getTargetHeartRate() << endl;
 }

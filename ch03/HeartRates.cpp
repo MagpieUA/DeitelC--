@@ -19,10 +19,18 @@
 
 #include <iostream>
 #include <string>
-#include <stdio.h>
+#include <sstream>
 #include "HeartRates.h"
 
 using namespace std;
+
+template <typename T>
+std::string toString(T val)
+{
+	std::ostringstream oss;
+	oss << val;
+	return oss.str();
+}
 
 HeartRates::HeartRates ( string fname, string lname, int mm, int dd, int yy )
 {
@@ -100,12 +108,12 @@ int HeartRates::getMaximumHeartRate()
 	return (220 - getAge());
 }
 
-/*string HeartRates::getTargetHeartRate()
+string HeartRates::getTargetHeartRate()
 {
 	int max;
 	max = getMaximumHeartRate();
 	string lowrate, highrate;
-	sprintf(lowrate, "%d", max * 50 / 100);
-	sprintf(highrate, "%d", max * 85 / 100);
+	lowrate = toString(max * 50 / 100);
+	highrate = toString(max * 85 / 100);
 	return (lowrate + "-" + highrate);
-}*/
+}
